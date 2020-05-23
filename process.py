@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup as bs
 import requests
 import re
-import emoji
 
 html = requests.get("https://zh.wikipedia.org/wiki/繪文字")
 soup = bs(html.text, "html.parser")
