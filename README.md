@@ -3,6 +3,8 @@
 
 這個表情符號選擇器是在看到 [Luke Smith](https://github.com/lukesmithxyz) 的影片 [dmenu tips: Emojis and more](https://youtu.be/UCEXY46t3OA) 後複製出的類似作品，如果你喜歡這個表情符號選擇器，請去訂閱支持最先創作出這個概念的人。
 
+[English Documentation](README_EN.md)
+
 ## 使用
 ### 選擇器
 
@@ -38,7 +40,14 @@ pip install bs4 requests
 
 ``` bash
 python process.py
-# 因 python2 已經停止維護，這裡假設你已經安裝好 python3m，且了解當中的差異。
+# 因 python2 已經停止維護，這裡假設你已經安裝好 python3，且了解當中的差異。
 ```
 
 執行完成請檢查 emoji_list 內容是否正確
+
+### 資料格式
+在 emoji_list 中的資料按照以下格式輸出
+
+```
+<表情符號> <Unicode> <名稱>
+```
